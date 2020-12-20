@@ -1,0 +1,560 @@
+@import './__fonts'
+@import './__media'
+
+$viol: #3C5898
+    
+*
+    // scroll-behavior: smooth
+    margin: 0
+    padding: 0
+    box-sizing: border-box  
+    font-family: 'Roboto Mono', monospace
+
+html,body
+    overflow-x: hidden
+
+.wrapper
+
+    width: 100%
+    height: 100%
+    background-color: #141718
+    
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px
+
+
+.default
+    display: block
+
+
+header, nav 
+    animation: fadeInDown 1.5s ease
+
+.nav
+    
+    margin-left: 150px
+    ul 
+        margin-bottom: 10px
+        li
+            display: inline
+            margin: 15px
+            transition: .3s
+        a
+            margin-bottom: 50px
+            text-decoration: none
+            font-size: 18px
+            color: #ffffff
+            transition: .3s
+            &:hover
+                color: $viol
+            // &::before
+            //     content: ''
+            //     position: absolute
+            //     width: 70px
+            //     margin-top: 30px
+            //     height: 3px
+            //     background-color: $viol
+
+
+.logo
+
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 70px
+    border-radius: 50%
+    height: 70px
+    background-color: #000
+    img
+        width: 50px
+
+
+.nav__tel-icon img
+    transform: scale(2)
+
+
+.header__pos
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.nav__tel-icon
+    margin: 20px
+
+
+.present
+    width: 100%
+    padding-bottom: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    &__container
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        &-info
+            // border: solid 1px green
+            flex-direction: column
+            display: flex
+            margin-left: 150px
+            font-size: 32px
+            align-items: flex-start
+            width: 50%
+            color: #ffffff
+            h3
+                opacity: 1
+                font-size: 25px
+                font-weight: 100
+                // max-width: 600px
+                min-width: 100%
+            *
+                opacity: 1
+                margin: 10px
+            a
+                margin-top: 34px
+                font-size: 20px
+                text-decoration: none
+                background: $viol
+                color: #ffffff
+                padding: 10px 10px
+            h1
+                 color: $viol
+                 
+
+        &-img
+            flex-direction: column
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 50%
+            img
+                width: 550px
+                animation: fadeInRight 1s ease
+
+
+section
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1)
+    height: 80vh
+
+
+.about
+    height: 100% !important
+    padding-bottom: 150px
+    
+
+.about_container
+    // height: 100%
+    // padding-bottom: 250px
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+.about__img,.about__text
+    display: flex
+    // justify-content: center
+    // align-items: center
+    flex-direction: column
+    width: 100%
+
+.about__title
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 20px
+
+.stroke
+    font-size: 20px
+    color: #ffffff
+    margin-top: 35px
+
+.stroke::before
+    content: ''
+    position: absolute
+    width: 200px
+    transition: 1s
+    margin-left: -67px
+    margin-top: 35px
+    height: 5px
+    background-color: $viol
+
+.custBef::before
+    width: 0px !important
+
+.about__img 
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+        width: 400px
+
+
+.about__text
+    height: 100%
+    h1
+        color: $viol
+        font-size: 32px
+
+    &-container
+        margin-top: 25px
+        p
+            font-weight: 100
+            font-size: 18px
+            max-width: 600px
+            color: #ffffff
+
+
+
+.about_container
+    margin-top: 100px
+
+
+.advantage__title
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    .stroke::before
+        width: 250px
+        margin-left: -23px
+
+
+.advantage__col
+    margin-top: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    &-container
+        display: flex
+        justify-content: center
+        align-items: center
+        .col
+            margin: 25px
+            padding-top: 50px
+            padding: 30px
+            width: 330px
+            border: solid 1px $viol
+            border-radius: 5px
+            height: 100%
+
+            &__info-text
+                margin-top: 20px
+                p
+                    color: #ffffff
+                    font-weight: 100
+        
+        .col__info
+            h2
+                color: $viol
+
+
+
+
+.contacts
+    &-title
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        .stroke::before
+            // width: 100px
+            margin-left: -53px
+
+
+//----------SLIDER---------------//
+
+.slide
+    background-color: rgba(500, 500, 500,0.05)
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #ffffff
+    width: 450px
+    text-align: center
+    flex-direction: column
+    padding: 20px
+    margin: 0px
+    height: 300px
+    border-radius: 12px
+    border: solid 2px $viol
+    .triangle
+        transform: scale(2.3)
+        // border: solid 2px red
+        position: absolute
+        top: 4px
+        left: -30px
+        margin-left: 100%
+
+    .slide__content
+        // border: solid 2px red
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+        height: 100% !important
+    *
+        margin: 5px
+
+
+.feedback-title
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+
+.feedback
+    width: 100%
+    height: 100%
+
+.slick-dots
+    display: flex
+    justify-content: center
+    align-items: center
+
+    
+.slider
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    width: 85%
+    overflow: hidden
+
+.slick-track
+    display: flex
+    width:500px
+
+.feedback
+    width: 100%
+    height: 80vh
+    .slider-container
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 80%
+
+
+
+.slick-current  
+    // border: solid 2px green
+    transform: scale(.9) !important
+    .triangle
+        display: block !important
+    
+.slide
+     transition: 0.3s all
+     transform: scale(0.7)
+     height: 100%
+     .triangle
+        display: none
+
+
+
+.slider-container button
+
+    background: none
+    border: none
+    cursor: pointer
+    outline: none
+    img
+        transform: scale(1.4)
+
+//----------SLIDER---------------//
+
+
+
+// .feedback
+//     padding-top: 50px
+
+
+.slide-author
+    opacity: 0.3
+    margin-top: 25px
+    font-size: 25px
+.contacts__container
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 60vh
+    &-info
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        margin-top: 50px
+        .contacts__button
+            margin-top: 80px
+            margin-left: 5px
+            a
+                color: #ffffff
+                background-color: $viol
+                font-size: 25px
+                padding: 5px 20px
+                font-weight: lighter
+                text-decoration: none
+                position: relative
+                left: 0px
+                top: 0px
+                z-index: 5
+                transition: .5s
+                &:hover
+                    left: -5px
+                    top: -5px
+            .btn__solid
+                position: relative
+                width: 160px
+                bottom: 45px
+                left: -5px
+                height: 45px
+                z-index: 0
+                border: solid 2px $viol
+        
+        .contacts__tel-icon
+            transform: scale(2.5)
+
+
+
+.footer
+    width: 100%
+    height: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    p
+        color: #ffffff
+    background-color: $viol
+
+
+
+.slider_ctrl
+    width: 100%
+    position: absolute
+    display: flex
+    justify-content: space-between
+    padding: 50px
+
+.burger__menu
+    transition: .5s
+    // padding-top: 20px
+    width: 100%
+    height: 0px
+    background-color: rgb(17, 18, 19)
+    position: absolute
+.burger__menu
+    top: 85px
+    overflow: hidden
+    ul 
+        margin-top: 40px
+        li
+            display: block
+    nav
+        margin-left: 10px
+
+.burger
+    z-index: 10
+    width: 50px
+    display: none
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    flex-direction: column
+    height: 40px
+    border: solid 1px rgb(17, 18, 19)
+
+    div
+        margin: 2px
+        width: 30px
+        height: 2px
+        background-color: $viol
+
+
+nav
+    display: none
+
+
+
+
+.stuff
+    width: 100%
+    height: 100%
+    padding-bottom: 100px
+    padding-top: 35px
+    &__title
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__container
+        padding-top: 45px
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__block
+        // border: solid 2px red
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        text-align: center
+        padding: 10px
+        height: 100%
+        color: #ffffff
+        p
+            margin-top: 40px
+            line-height: 1.5
+            padding: 0 120px
+       
+        .stuff__img
+            width: 370px
+            height: 150px
+            background-color: #C4C4C4
+
+        *
+            margin-top: 10px
+
+        .stuff__btn
+            margin-top: 40px
+            a
+                text-decoration: none
+                font-size: 20px
+                font-weight: lighter
+                background: $viol
+                padding: 7px 35px 
+                color: #ffffff
+
+       
+
+        .stuff__text-title
+            // margin-right: 10px
+            // margin-left: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            text-align: center
+        
+        .ora::before
+            background-color: #DD6019 !important
+
+        .viol::before
+            background-color: #692C98 !important
+        
+        .stuff__text-title::before
+            content: ''
+            position: absolute
+            width: 280px
+            margin-top: 50px
+            height: 5px
+            background-color: #19A8DD
+
+        
