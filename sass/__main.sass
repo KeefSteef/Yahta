@@ -494,6 +494,7 @@ nav
         align-items: center
 
     &__container
+        // overflow: hidden
         padding-top: 45px
         display: flex
         justify-content: center
@@ -501,7 +502,10 @@ nav
 
     &__block
         // border: solid 2px red
+        // opacity: 0
+        // transform: translateY(-20px)
         width: 100%
+        // animation: fadeInDown 5s ease
         display: flex
         justify-content: center
         align-items: center
@@ -526,13 +530,23 @@ nav
         .stuff__btn
             margin-top: 40px
             a
+                background: none
                 text-decoration: none
                 font-size: 20px
                 // font-weight: lighter  
                 font-weight: normal
-                background: $viol
+                // background: $viol
                 padding: 7px 35px 
-                color: #ffffff 
+                color: $viol
+                border: solid 2px $viol
+                transition: .5s
+                &:hover
+                    background: $viol
+                    color: #000
+                    // box-shadow: 0 0 30px $viol,
+                    //             0 0 60px $viol,
+                    //             0 0 90px $viol
+
 
        
 
@@ -557,4 +571,5 @@ nav
             margin-top: 50px
             height: 5px
             background-color: #19A8DD
+
 

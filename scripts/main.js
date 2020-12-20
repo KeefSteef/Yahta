@@ -37,6 +37,7 @@ marker.observe(document.querySelectorAll('.col__info-text')[0]);
 
 
 
+
 function burgerDrop(){
 
 let burgerHeight = document.querySelector('.burger__menu'),
