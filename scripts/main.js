@@ -97,3 +97,8 @@ function smoothScroll(){
 
 
 smoothScroll();
+
+
+if(window.innerWidth < 1000){
+ $('.stuff__block').removeClass('wow')
+}
